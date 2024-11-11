@@ -68,8 +68,8 @@ class CustomDataset(Dataset):
         return sample_input
         
 if __name__ == '__main__':
-    train = CustomDataset('/home/miil/DATA1/dahee/siim-acr-pneumothorax/data/', 'train')
-    test = CustomDataset('/home/miil/DATA1/dahee/siim-acr-pneumothorax/data/', 'test')
+    train = CustomDataset('/home/pwrai/userarea/hansung3/KTL_project_03_Pneumothorax_Segmentation/data', 'train')
+    test = CustomDataset('/home/pwrai/userarea/hansung3/KTL_project_03_Pneumothorax_Segmentation/data', 'test')
     for sample_input in train:
         print(sample_input['input'].shape)
         print(sample_input['target'].shape)
