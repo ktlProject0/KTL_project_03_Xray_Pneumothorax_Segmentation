@@ -16,7 +16,7 @@ from loss import DiceChannelLoss
 
 if __name__ == '__main__':
     # Training settings
-    parser = argparse.ArgumentParser(description='Poly Segmentation')
+    parser = argparse.ArgumentParser(description='Pneumothrox Segmentation')
     parser.add_argument('--data_direc', type=str,default='./data', help="data directory")
     parser.add_argument('--n_classes', type=int,default=1, help="num of classes")
     parser.add_argument('--batchSize', type=int, default=16, help='training batch size')
