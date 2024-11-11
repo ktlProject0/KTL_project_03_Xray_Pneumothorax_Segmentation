@@ -40,7 +40,7 @@ if __name__ == '__main__':
     torch.manual_seed(opt.seed)
     
     if opt.cuda:
-        device = torch.device("cuda:1")
+        device = torch.device("cuda")
     else:
         device = torch.device("cpu")
 
