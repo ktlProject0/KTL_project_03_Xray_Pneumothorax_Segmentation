@@ -44,7 +44,7 @@ if __name__ == '__main__':
     else:
         device = torch.device("cpu")
 
-    
+    device ='cuda'
     print('===> Loading datasets')
     
     train_set = CustomDataset(f"{opt.data_direc}/train",mode='train')
