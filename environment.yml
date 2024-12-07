@@ -1,4 +1,4 @@
-name: 03_pneumothorax_segmentation
+name: KTL_project_03_Xray_Pneumothorax_Segmentation
 channels:
   - pytorch
   - nvidia
@@ -213,4 +213,4 @@ dependencies:
       - fsspec==2024.10.0
       - simpleitk==2.4.0
       - sympy==1.13.1
-prefix: /home/pwrai/userarea/anaconda_envs/envs/03_pneumothorax_segmentation
+prefix: /home/pwrai/userarea/anaconda_envs/envs/KTL_project_03_Xray_Pneumothorax_Segmentation
