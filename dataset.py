@@ -56,7 +56,6 @@ class CustomDataset(Dataset):
             sample['origin_shape'] = image.shape
 
             self.cache[idx] = sample
-            
         if self.transform:
             transformed = self.transform(image= sample['image'], mask = sample['mask'])
 
@@ -64,12 +63,11 @@ class CustomDataset(Dataset):
         sample_input['input'] = transformed['image']
         sample_input['target'] = transformed['mask']
         sample_input['origin_shape'] = sample['origin_shape']
-        
         return sample_input
         
 if __name__ == '__main__':
-    train = CustomDataset('/home/pwrai/userarea/hansung3/KTL_project_03_Pneumothorax_Segmentation/data', 'train')
-    test = CustomDataset('/home/pwrai/userarea/hansung3/KTL_project_03_Pneumothorax_Segmentation/data', 'test')
+    train = CustomDataset('/home/pwrai/userarea/KTL_project_03_Xray_Pneumothorax_Segmentation/data/', 'train')
+    test = CustomDataset('/home/pwrai/userarea/KTL_project_03_Xray_Pneumothorax_Segmentation/data/', 'test')
     for sample_input in train:
         print(sample_input['input'].shape)
         print(sample_input['target'].shape)
